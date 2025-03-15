@@ -1,125 +1,5 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f5f5f5;
-    height: 400px;
-}
-html{
-	height: 100%;
-}
-body {
-	height: 100%;
-background: #eeeeee;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #eeeeee,#401d53 );  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #eeeeee , #401d53); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
-}
-
-.wrapper {
-	overflow: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.triangle-canvas {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	width: 100%;
-	height: 100%;
-	transform: translate(-50%, -50%);
-}
-
-.triangle {
-	fill: none;
-	stroke: #fff;
-	stroke-width: 15;
-	transform-origin: center center;
-	animation: triangle-animation 10s linear infinite;
-}
-.triangle-1 {
-	animation-delay: 0s;
-}
-.triangle-2 {
-	animation-delay: -0.5s;
-}
-.triangle-3 {
-	animation-delay: -1s;
-}
-.triangle-4 {
-	animation-delay: -1.5s;
-}
-.triangle-5 {
-	animation-delay: -2s;
-}
-.triangle-6 {
-	animation-delay: -2.5s;
-}
-.triangle-7 {
-	animation-delay: -3s;
-}
-.triangle-8 {
-	animation-delay: -3.5s;
-}
-.triangle-9 {
-	animation-delay: -4s;
-}
-.triangle-10 {
-	animation-delay: -4.5s;
-}
-.triangle-11 {
-	animation-delay: -5s;
-}
-.triangle-12 {
-	animation-delay: -5.5s;
-}
-.triangle-13 {
-	animation-delay: -6s;
-}
-.triangle-14 {
-	animation-delay: -6.5s;
-}
-.triangle-15 {
-	animation-delay: -7s;
-}
-.triangle-16 {
-	animation-delay: -7.5s;
-}
-.triangle-17 {
-	animation-delay: -8s;
-}
-.triangle-18 {
-	animation-delay: -8.5s;
-}
-.triangle-19 {
-	animation-delay: -9s;
-}
-.triangle-20 {
-	animation-delay: -9.5s;
-}
-
-@keyframes triangle-animation{
-	0%{
-		transform: scale(0) rotate(0deg);
-		opacity: 0.4;
-	}
-	
-	100%{
-		transform: scale(3) rotate(45deg);
-		opacity: 0;
-	}
-}
 
 
 
@@ -185,7 +65,7 @@ section .title{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
 section .title::before{
     content: "";
@@ -300,8 +180,8 @@ section .title::after{
 
 .home{
     display: flex;
-    background: url("/image/download\ \(3\).jpeg") no-repeat center;
-    height: 100vh;
+    background: url("/image/d.jpg") no-repeat center;
+    height: 630px;
     color: #fff;
     min-height: 500px;
     background-size: cover;
@@ -331,7 +211,7 @@ section .title::after{
     font-style: italic;
 }
 .Home .Home-content .text-3 span{
-    color: #60001a;
+    color: white;
     font-weight: 500;
 }
 .classbox
@@ -364,7 +244,7 @@ section .title::after{
     content: '';
     position: absolute;
     inset: 4px;
-    background: #1b1833;
+    background: #490043;
     /* background: crimson; */
     border-radius: 20px;
 }
@@ -421,7 +301,9 @@ section .title::after{
 }
 .about .about-content .right p{
     text-align: justify;
-    color: #1d1c83;
+    color:#1b1833 ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
 }
 
 
@@ -656,7 +538,7 @@ section .title::after{
     width: 100px;
     height: 100px;  
     opacity: 1;
-    background: url("/image/65.png") no-repeat;
+    background: url("/image/40.png") no-repeat;
     background-size: 100px;
     background-position: center;
     filter:invert(100%);
@@ -709,7 +591,7 @@ section .title::after{
     width: 100px;
     height: 100px;  
     opacity: 1;
-    background: url("/image/65.png") no-repeat;
+    background: url("/image/40.png") no-repeat;
     background-size: 100px;
     background-position: center;
 }
@@ -802,7 +684,7 @@ color: #60001a;}
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-    color: #004343;
+    color: #60001a;
 }
 .Education .carousel .card img{
     height: 150px;
@@ -834,7 +716,7 @@ color: #60001a;}
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: darkblue!important;
+    background: #60001a!important;
 }
 .Education.carousel .card .box .project
 {
@@ -878,6 +760,7 @@ input,textarea
 }
 .contact .contact-content .left p{
     text-align: justify;
+    color: #1b1833;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -892,13 +775,14 @@ input,textarea
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: #60001a;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
+    color: #1b1833;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: #1b1833;
 }
 .contact .right form .fields{
     display: flex;
@@ -941,7 +825,7 @@ input,textarea
   align-items: center;
 }
 .right form .button-area button{
-  color: brown;
+  color: #60001a;
   display: block;
   width: 160px!important;
   height: 45px;
@@ -956,7 +840,7 @@ input,textarea
 }
 .right form .button-area button:hover{
   color: white;
-  background: green;
+  background: #60001a;
 }
 /* footer section styling */
 
